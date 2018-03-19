@@ -1,6 +1,11 @@
 import nmap
 import sys
 
+'''
+Code Reference:
+Nmap library doc
+https://pypi.python.org/pypi/python-nmap
+'''
 nm = nmap.PortScanner()
 target = str(sys.argv)
 nm.scan(target, arguments='-O -sV')
